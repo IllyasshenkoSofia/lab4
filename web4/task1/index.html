@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zmina</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Зміна властивостей зображення</h1>
+      <img src="image.jpg" alt="image" />
+      <form action="">
+        <h2>Зміна розмірів:</h2>
+        <div class="input-group">
+          <input
+            type="text"
+            name="width"
+            id="width"
+            maxlength="4"
+            pattern="\d*"
+            class="input-text"
+            required
+          />
+          <label for="width">Ширина (width)</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            name="height"
+            id="height"
+            maxlength="4"
+            pattern="\d*"
+            class="input-text"
+            required
+          />
+          <label for="height">Висота (height)</label>
+        </div>
+        <h2>Зміна рамки:</h2>
+        <div class="input-group">
+          <input
+            type="text"
+            name="border-size"
+            id="border-size"
+            maxlength="1"
+            pattern="\d*"
+            class="input-text"
+            required
+          />
+          <label for="border-size">Товщина рамки</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            name="border-color"
+            id="border-color"
+            class="input-text"
+            required
+          />
+          <label for="border-color">Колір рамки</label>
+        </div>
+        <h2>Додатково:</h2>
+        <div class="input-group">
+          <input type="text" name="alt-text" id="alt-text" class="input-text" />
+          <label for="alt-text">Альтернативний текст</label>
+        </div>
+        <input type="button" value="Застосувати параметри" id="btn" />
+      </form>
+    </div>
+    <script src="file.js"></script>
+  </body>
+</html>

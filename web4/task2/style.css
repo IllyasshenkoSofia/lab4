@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 4rem 7rem 5rem;
+  border-style: double;
+  border-color: #38108f;
+  border-width: 10px;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  color: indigo;
+  font-style:italic;
+  font-weight: bold;
+}
+.list {
+  font-size: 25px;
+  margin: 5rem 2rem 0 2rem;
+}
+.list-item {
+  height: 40px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-add {
+  width: 30%;
+  height: 40px;
+  margin: 3rem 0 3rem 2rem;
+  background: #fff;
+  color: indigo;
+  border: 2px solid indigo;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-add:focus {
+  outline: none;
+}
+.delete-item {
+  color: navy;
+  cursor: pointer;
+}
+.list-item:nth-child(odd) {
+  background: rgb(127, 255, 212);
+}
+.list-item:nth-child(even) {
+  background: rgb(64, 224, 208);
+}
+.diagram-container {
+  display: flex;
+  height: 300px;
+  align-items: flex-end;
+}
+.column {
+  background-color: red;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-value {
+  width: 100%;
+}
+.column-group {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  text-align: center;
+  justify-content: flex-end;
+}
